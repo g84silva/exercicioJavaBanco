@@ -61,7 +61,7 @@ public class ContaEjo {
 	public double transferir(ContaEjo contaDestino, double valor) {
 		if(this.getSaldo() - valor < 0) {
 			System.out.println("Saldo da conta de origem é insuficiente para esta transação!");
-			}else {
+			}else{
 			this.debitar(valor);
 			contaDestino.creditar(valor);
 			}
